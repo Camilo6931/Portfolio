@@ -1,0 +1,155 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    background-color: #293241;
+    background: radial-gradient(circle, rgb(30, 28, 46) 0%, rgba(56,56,51,1) 100%);
+}
+
+.formularios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 40px 30px 25px 0 rgba(0,0,0,0.6);
+    height: 70px;
+    width: 79%;
+    border: 1px solid #fdf903a1;
+    border-radius: 10px;
+    margin: 20px 0 40px;
+    
+}
+
+.logo img{
+    height: 70px;
+    padding-left: 30px;
+}
+
+header a i{
+    color: #00ff2a;
+    font-size: 35px;
+    padding: 15px 30px;
+}
+
+.form-contenedor {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 0 30px 0;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 40px 30px 25px 0 rgba(0,0,0,0.6);
+    
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 90px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+button[type="reset"] {
+    width: 90px;
+    height: auto;
+    background-color: #af4c4c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    font-size: 1.5rem;
+    color: #fdf903a1;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.whatsapp-button {
+    bottom: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.whatsapp-button:hover{
+    filter: drop-shadow(10px 0px 10px orange);
+}
+
+.linkedin-button {
+    bottom: 140px;
+    background-color: #0077B5;
+    color: white;
+    border-radius: 50%;     
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.linkedin-button:hover{
+    filter: drop-shadow(10px 0px 10px orange);
+}
+
+.github-button {
+    bottom: 220px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.github-button:hover{
+    filter: drop-shadow(10px 0px 10px orange);
+}
+
+#redess{
+    display: flex;
+    gap: 30px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae2b94cc90.js" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Css/formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Form Contact</title>
+    <link rel="icon" type="img/png" href="img/icon_page.png">
+</head>
+<body>
+    <div class="formularios">
+        <header>
+            <div class="logo">
+                <img src="/img/Logo.png" alt="Logo"></a>
+            </div>
+            <a href="./portfolio.html"><i class="fa-solid fa-house-user" ></i></a>
+        </header>
+    
+        <form action="form_handler.php" class="form-contenedor" method="post">
+            <fieldset>
+                <legend>Contact me</legend>        
+                <div class="container">
+                    <div class="name_group">
+                        <label for="fName">First name : </label>
+                        <input type="text" id="fName" name="fName" placeholder="Please enter your first name" required><br><br>
+
+                        <label for="surname">Last name : </label>
+                        <input type="text" id="surname" name="surname" placeholder="Please enter your first surname" required><br><br>
+    
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" name="email" placeholder="Please enter your email" required><br><br>
+    
+                        <label for="phoneNumber">Telephone number : </label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Please enter your phone number" required><br><br>
+
+                        <label for="subject">Subject: </label>
+                        <input type="text" id="subject" name="subject" placeholder="Please indicate the subject of the email" required><br><br>
+                    </div>
+                </div>
+                <label for="Description">Description: </label><br><br>
+                <textarea name="Description" id="Description" cols="70" rows="10"></textarea><br><br>
+                <div class="buttonForm">  
+                    <button type="submit" value="Send">Send</button><br><br>
+                    <button type="reset" value="Delete">Delete</button>
+                </div>            
+            </fieldset>
+        </form>
+        
+        </div>
+        
+        <div id="redess">
+            <a href="https://wa.me/+573103419452" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/camilo-estupinan/" class="linkedin-button" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Camilo6931?tab=repositories" class="github-button" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        
+    </div>    
+    <footer>&copy;Camilo Estupiñán - Todos los derechos reservados</footer> 
+    
+</body>
+</html>
