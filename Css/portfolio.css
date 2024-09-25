@@ -67,7 +67,7 @@ body{
 .header .navegacion ul li a:hover {
     filter: drop-shadow(5px 15px 5px #a8adac);
 }
-/*HEADER*/
+/*HEADER///////////////////////////////////////////*/
 
 .main-content {
     padding: 0.4% 0 0;
@@ -97,12 +97,9 @@ body{
     
 }
 .column1 h2{
+    text-decoration: none;
     text-align: center;
     color: #5f6161;
-}
-
-.column1 h2:hover{
-    filter: drop-shadow(5px 10px 15px orange);
 }
 
 .column1 p{
@@ -120,80 +117,81 @@ body{
 /*COLUMN1///////////////////////////////*/
 
 /*COLUMNA2/////////////////////////////*/
-.column2{
-    position: relative;
+    /*ABOUT ME/////////////////////////////*/
+
+.aboutMe{
+    display: flex;
+    padding: 25px;
+    color: #000;
+    margin: 35px;
+    border: 3px #747e7c solid;
     border-radius: 10px;
-    height: auto;
-    margin: 0 0 30px 0;
-    
+    background-color: #e9f1f7;
+    /*box-shadow: 20px 2cap 25px 0 rgba(0,0,0,0.7);*/
 }
 
-#column2-section .aboutMe{
-    color: #000;
-    height: auto;
-    margin: 25px 40px 45px 40px;
-    padding: 15px;
-    border: 4px #ffb703 solid;
-    border-radius: 8px;
-    background-color: #e9f1f7;
-    box-shadow: 40px 30px 25px 0 rgba(0,0,0,0.7);
-}
-#column2-section .aboutMe p:hover{
-    filter: drop-shadow(10px 10px 5px orange);
-}
-#column2-section .foto-perfil2 img{
-    float: left;
-    border: 2px #ffb703 solid;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
-}
-#column2-section .about {
+.foto-perfil2 i{
+    font-size: 30px;
     display: flex;
-    flex-direction: column;
-    text-align: justify;
-    margin: 0;
+    border-radius: 50%;
 }
-#column2-section .about h4{
-    padding: 9px 10px;
+
+.about h4{
+    display: flex;
+    padding: 9px 0 10px 22px ;
     color: #5f6161; 
     font-size:1.3rem;
 }
 
-#column2-section .myServices{
-    margin: 25px 40px 25px 40px;
-    padding: 15px;
-    border: 4px #ffb703 solid;
+.about  p{
+    text-align:justify;
+    justify-items:center;
+    margin: 0 25px 20px 25px;
+}
+    /*ABOUT ME/////////////////////////////*/
+
+
+    /*SERVICESS///////////////////////////*/
+.myServices{
+    margin: 35px;
+    padding: 25px;
+    border: 3px #747e7c solid;
     border-radius: 8px;
     background-color: #e9f1f7;
-    box-shadow: 40px 30px 25px 0 rgba(0,0,0,0.7);
+    /*box-shadow: 20px 2cap 25px 0 rgba(0,0,0,0.7);*/
 }
-
-/*SERVICESS*/
-
-.myServices .contenedor2 {
-    padding: 0%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    border-radius: 10px;
-    padding-bottom: 30px;
+.theServices{
+    display: flex;
+    align-items: center;
 }
-.myServices h4 {
+.theServices i{
+    font-size: 30px;
+    border-radius: 50%;
+    margin-right: 22px;
+}
+.theServices h4 {
     color: #5f6161;
     font-size: 1.3rem;
+    margin: 0;
 }
-.contenedor2 .service-item {
+.contenedor2 {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.service-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px 10px 10px 15px;
     margin: 30px 20px 3px 0;
-    border: 3px solid #fdf903a1;
+    border: 2px solid #5f6161;
     border-radius: 8px;
-    box-shadow: 40px 30px 25px 0 rgba(0,0,0,0.7);
     transition: 0.3s;
     color:#000;
 }
@@ -202,87 +200,27 @@ body{
     width: 60px;
 }
 #column2-section .service-item:hover {
-    filter: drop-shadow(5px 10px 15px orange);
+    box-shadow: 20px 20px 25px 0 rgba(0,0,0,0.7);
+    filter: drop-shadow(5px 10px 15px rgb(241, 214, 163));
 }
 #column2-section .service p{
     text-align: center;
 }
 .service-item h3{
-    color: red;
+    color: #3f3f3f;
 }
-/*
-#column2-section .flip-card{
-    margin:30px 50px;
-    background-color: transparent;
-    width: 200px;
-    height: 250px;
-    perspective: 1000px;
-}
+/*COLUMNA2/////////////////////////////*/
 
-#column2-section .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-#column2-section .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-#column2-section .flip-card-front, #column2-section .flip-card-back {
-    position: absolute;
-    border: 1px solid #fdf903a1;
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-#column2-section .flip-card-front{
-    background: #052836;
-    color: black;
-}
-
-#column2-section .flip-card-front img{
-    height: 200px;
-}*/
-/*
-#column2-section .flip-card-back{
-    padding: 10px;
-    background-color: #212529;
-    color: white;
-    transform: rotateY(180deg);
-}
-#column2-section .flip-card-back p{
-    padding: 15px 5px 10px 5px;
-    text-align: justify;
-}
-#column2-section .flip-card-back a button{
-    margin:  0 10px;
-    padding: 7px 15px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-#column2-section .flip-card-back button:hover{
-    background-color: #0056b3;
-}
-*/
+/*COLUMN3 ////////////////////////////*/
 #column3-section {
     display: flex;
     color: #000;
+    width: 500px;
     background-color: #e9f1f7;
-    border: 4px #ffb703 solid;
-    border-radius: 15px;
-    margin: 10px 10px 0 10px;
-    box-shadow: 40px 30px 25px 0 rgba(0,0,0,0.7);
+    border: 3px #747e7c solid;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-bottom: 30px;
 }
 #column3-section .my-skills {
     display: grid;
@@ -314,10 +252,8 @@ body{
     transition: all 0.3s ease 0s;
 }
 #column3-section .blandas{
-    height: 410px;
     border-radius: 8px;
     /*border: 1px solid #fdf903a1;*/
-    margin: 20px;
     padding: 45px 0 0 75px;
 }
 #column3-section .blandas li{
@@ -325,6 +261,7 @@ body{
     list-style-type: none;
     line-height: 2.0;
 }
+/*COLUMN3 ////////////////////////////*/
 
 .whatsapp-button {
     /*position: fixed;*/
@@ -404,7 +341,7 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
-    color: #fdf903a1;
+    color: #5f6161;
     margin-top: 1%;
     margin-bottom: 2%;
 }
